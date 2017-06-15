@@ -1,4 +1,4 @@
-FROM node:7.1-alpine
+FROM node:alpine
 MAINTAINER Antonio Canas <antonio.canas.poblete@gmail.com>
 
 ENV \
@@ -8,6 +8,7 @@ ENV \
     g++ \
     python \
     git \
+    node-sqlite3 \
   '
 
 RUN apk add --update --no-cache $PACKAGES
