@@ -8,7 +8,7 @@ ENV \
     g++ \
     python \
     git \
-    node-sqlite3 \
+    sqlite-libs \
   '
 
 RUN apk add --update --no-cache $PACKAGES
